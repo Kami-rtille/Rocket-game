@@ -3,6 +3,7 @@ package camilleglacon.intro.rocket;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.AnimationUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,5 +15,10 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.rocket).startAnimation(AnimationUtils.loadAnimation(this,R.anim.flotteur));
 
+    }
+
+
+    public void slidetop(View view) {
+        findViewById(R.id.rocket).startAnimation(AnimationUtils.loadAnimation(this,R.anim.slidetop));
     }
 }

@@ -12,13 +12,16 @@
         android:layout_height="wrap_content"
         android:background="@mipmap/background2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="slidetop"
+        />
 
     <ImageView
         android:id="@+id/rocket"
         android:layout_width="171dp"
         android:layout_height="171dp"
         android:layout_marginBottom="8dp"
+        android:clickable="false"
         android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,5 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.89" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
